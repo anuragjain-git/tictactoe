@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.nav {
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav:hover {
+    text-decoration: underline;
+}
+
+.top-div {
+    padding: 20px 50px 0;
+}
+
+#board {
+    /* border: 1px solid black; */
+    border-spacing: 0;
+}
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+
+/* 
+Class of three box are represented as 
+       a b c
+       d e f
+       g h i
+*/
+
+.b,.e,.h {
+    border-left: none;
+    border-right: none;
+}
+.d,.e,.f {
+    border-top: none;
+    border-bottom: none;
+}
+.a,.b,.c {
+    border-top: none;;
+}
+
+.g,.h,.i {
+    border-bottom: none;
+}
+
+.a,.d,.g {
+    border-left: none;
+}
+.c,.f,.i {
+    border-right: none;
+}
+
+/* Center the div */
+
+.main-div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.X,.O {
+    color: black;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#reset {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    padding: 5px 13px;
+}
+
+.btn {
+    position: absolute;
+    left: 90%;
+    transform: translate(100%,215%);
+}
+
+#p {
+    width: 57.8px;
+    height: auto;
+    position: absolute;
+    left: 134.5%;
+    text-align: center;
+    /* bottom: 120%; */
+    transform: translate(0,0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    border: 1px solid black;
+    border-radius: 8%;;
+    padding: 5px 5px;
+    /* text-decoration: underline; */
+}
