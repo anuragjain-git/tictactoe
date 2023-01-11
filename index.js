@@ -17,7 +17,7 @@ board.addEventListener("click", function(event) {
 
     if(win()) {
         // $("#p").show();
-        $("#p").text(player+' Won');
+        // $("#p").text(player+' Won');
         if(player=="O"){
             player="X";
         }
@@ -29,7 +29,7 @@ board.addEventListener("click", function(event) {
     }
     else if (draw()) {
         $("#p").show();
-        $("#p").text('Draw');
+        $("#p").text('Draw!');
     }
 
     // Change Player
