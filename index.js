@@ -23,9 +23,9 @@ board.addEventListener("click", function(event) {
             alert(player+" Won.");
             reset();
         }, 100);
-        if(player=="O"){
-            player="X";
-        }
+       // if(player=="O"){
+         //   player="X";
+        //}
         
     }
     else if (draw()) {
