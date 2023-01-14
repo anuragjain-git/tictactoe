@@ -18,13 +18,14 @@ board.addEventListener("click", function(event) {
     if(win()) {
         // $("#p").show();
         // $("#p").text(player+' Won');
-        if(player=="O"){
-            player="X";
-        }
+
         setTimeout(function() {
             alert(player+" Won.");
             reset();
         }, 100);
+        if(player=="O"){
+            player="X";
+        }
         
     }
     else if (draw()) {
